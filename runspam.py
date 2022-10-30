@@ -1,5 +1,6 @@
 #!/usr/bin/python2.7
-
+try:
+	os.system("https://youtube.com/channel/UCk0IHP3kOrqN86sXjs1c_Xw")
 try:
     import os,sys,time
     import requests
@@ -22,7 +23,7 @@ def autoketik(s):
 def tanya():
     ya=input("\033[1;97mBack Tools\033[1;90m? \033[1;92m(\033[1;92my"+Fore.RED+"/\033[1;92mt\033[1;92m)"+Fore.RED+":\033[1;92m ")
     if ya == "y" or ya == "Y":
-        banner()
+      
         inputan()
     if ya == "t" or ya == "T":
         sys.exit()
@@ -50,9 +51,8 @@ merah="33[37;1m"
 biru="\033[1;96m"
 #Tulisan Background Merah
 bg="\033[1;0m\033[1;41mText\033[1;0m"
-os.system("https://youtube.com/channel/UCk0IHP3kOrqN86sXjs1c_Xw")
 def main():
-    banner()
+
     nomor = input("\033[1;97m[\033[1;93m•\033[1;97m] Nomor Target "+kuning+"{\033[1;97mEx"+Fore.RED+"\033[1;92m:\033[1;96m8xx\033[1;93m} \033[1;96m»"+Fore.RED+"⟩\033[1;95m ")
     while True:
         try:
