@@ -1,7 +1,5 @@
 #!/usr/bin/python2.7
 try:
-	os.system("https://youtube.com/channel/UCk0IHP3kOrqN86sXjs1c_Xw")
-try:
     import os,sys,time
     import requests
     import json
