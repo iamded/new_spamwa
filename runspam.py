@@ -1,4 +1,7 @@
 #!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+
+
 try:
     import os,sys,time
     import requests
@@ -17,11 +20,11 @@ def autoketik(s):
         sys.stdout.flush()
         time.sleep(0.01)
 
-
+# Tanya Mau Main Lagi?
 def tanya():
     ya=input("\033[1;97mBack Tools\033[1;90m? \033[1;92m(\033[1;92my"+Fore.RED+"/\033[1;92mt\033[1;92m)"+Fore.RED+":\033[1;92m ")
     if ya == "y" or ya == "Y":
-      
+        banner()
         inputan()
     if ya == "t" or ya == "T":
         sys.exit()
@@ -49,8 +52,9 @@ merah="33[37;1m"
 biru="\033[1;96m"
 #Tulisan Background Merah
 bg="\033[1;0m\033[1;41mText\033[1;0m"
-def main():
 
+def main():
+    banner()
     nomor = input("\033[1;97m[\033[1;93m•\033[1;97m] Nomor Target "+kuning+"{\033[1;97mEx"+Fore.RED+"\033[1;92m:\033[1;96m8xx\033[1;93m} \033[1;96m»"+Fore.RED+"⟩\033[1;95m ")
     while True:
         try:
@@ -73,22 +77,33 @@ def main():
         except requests.exceptions.ConnectionError:
             exit('\033[0;37m[\033[0;31m!\033[0;37m] \033[0;37mKoneksi Internet Error')
     
-
+def banner():
+    ip=requests.get('https://api.ipify.org').text
+    os.system("clear")
+    autoketik("""
+\033[1;96m╔╦╗\033[1;97m┌─┐┌─┐┬  ┌─┐   \033[1;92m╦ ╦\033[1;97m┌─┐ | \033[1;96mPastikan Lu Udah Subrek
+ \033[1;96m║ \033[1;97m│ ││ ││  └─┐"""+Fore.RED+"""───\033[1;92m║║║\033[1;97m├─┤ | \033[1;96mSebelum Recode Toolsnya ajg
+ \033[1;96m╩ \033[1;97m└─┘└─┘┴─┘└─┘   \033[1;92m╚╩╝\033[1;97m┴ ┴ | Powered \033[1;96mExecuted Team""")
+    print(abu + '-' * os.get_terminal_size().columns, end=''*2)
+    print (Fore.RED+""" • \033[1;97mCreator"""+Fore.RED+""" : \033[1;92mAmmar-Executed""")
+    print (Fore.RED+""" • \033[1;97mGithubb"""+Fore.RED+""" : \033[1;92mgithub.com/AmmarrBN""")
+    print (Fore.RED+""" • \033[1;97mYour Ip"""+Fore.RED+""" : \033[1;92m"""+ip)
+    print(abu + '-' * os.get_terminal_size().columns, end=''*2)
 
 def banner2():
-    print ("\033[1;97m #"+Fore.YELLOW+".\033[1;97mTools \033[1;92mSpamWA2022")
-    print ("\033[1;97m 1"+Fore.RED+".\033[1;97mUnlimitid \033[1;92mSpam")
-    print ("\033[1;97m 2"+Fore.RED+".Exit \033[1;97mTools")
+    print ("\033[1;97m 1"+Fore.RED+".\033[1;97mMulai \033[1;92mSpam"+ungu+" 24 Jam Non Stop")
+    print ("\033[1;97m 2"+Fore.RED+".\033[1;97mLaporkan \033[1;93mBug")
+    print ("\033[1;97m 3"+Fore.RED+".Exit \033[1;97mTools")
     print(abu + '-' * os.get_terminal_size().columns, end=''*2)
 
 def inputan():
     banner2()
-    modepesawat=input("\033[1;97m[\033[1;93m•\033[1;97m] Pilih No Menu \033[1;96m»"+Fore.RED+"⟩\033[1;95m ")
+    modepesawat=input("\033[1;97m[\033[1;93m•\033[1;97m] Pilih Menu Tools \033[1;96m»"+Fore.RED+"⟩\033[1;95m ")
     if modepesawat == "1":
         main()
     #if modepesawat == "2":
-     #  os.system("xdg-open https://youtube.com/channel/UCk0IHP3kOrqN86sXjs1c_Xw")
-      #  tanya()
+        #os.system("xdg-open https://instagram.com/ammarexecuted")
+        #tanya()
     if modepesawat == "2":
         time.sleep(3)
         print ("\033[1;97m["+Fore.RED+"!\033[1;97m] Berhasil Keluar Dari Tools")
@@ -96,4 +111,5 @@ def inputan():
     if modepesawat > "3":
         print (putih+"Tolong Masukan Pilihan Dengan Benar"+Fore.RED+" !!!!!")
     
+banner()
 inputan()
