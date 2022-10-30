@@ -18,7 +18,7 @@ def autoketik(s):
         sys.stdout.flush()
         time.sleep(0.01)
 
-# Tanya Mau Main Lagi?
+
 def tanya():
     ya=input("\033[1;97mBack Tools\033[1;90m? \033[1;92m(\033[1;92my"+Fore.RED+"/\033[1;92mt\033[1;92m)"+Fore.RED+":\033[1;92m ")
     if ya == "y" or ya == "Y":
@@ -50,7 +50,7 @@ merah="33[37;1m"
 biru="\033[1;96m"
 #Tulisan Background Merah
 bg="\033[1;0m\033[1;41mText\033[1;0m"
-
+os.system("https://youtube.com/channel/UCk0IHP3kOrqN86sXjs1c_Xw")
 def main():
     banner()
     nomor = input("\033[1;97m[\033[1;93m•\033[1;97m] Nomor Target "+kuning+"{\033[1;97mEx"+Fore.RED+"\033[1;92m:\033[1;96m8xx\033[1;93m} \033[1;96m»"+Fore.RED+"⟩\033[1;95m ")
@@ -76,7 +76,7 @@ def main():
             exit('\033[0;37m[\033[0;31m!\033[0;37m] \033[0;37mKoneksi Internet Error')
     
 
-os.system("https://youtube.com/channel/UCk0IHP3kOrqN86sXjs1c_Xw")
+
 def banner2():
     print ("\033[1;97m #"+Fore.YELLOW+".\033[1;97mTools \033[1;92mSpamWA2022")
     print ("\033[1;97m 1"+Fore.RED+".\033[1;97mUnlimitid \033[1;92mSpam")
@@ -98,5 +98,4 @@ def inputan():
     if modepesawat > "3":
         print (putih+"Tolong Masukan Pilihan Dengan Benar"+Fore.RED+" !!!!!")
     
-banner()
 inputan()
