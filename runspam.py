@@ -82,7 +82,7 @@ def banner():
     os.system("clear")
     autoketik("""
 \033[1;96m╔╦╗\033[1;97m┌─┐┌─┐┬  ┌─┐   \033[1;92m╦ ╦\033[1;97m┌─┐ | \033[1;96mPastikan Lu Udah Subrek
- \033[1;96m║ \033[1;97m│ ││ ││  └─┐"""+Fore.RED+"""───\033[1;92m║║║\033[1;97m├─┤ | \033[1;96mSebelum Recode Toolsnya ajg
+ \033[1;96m║ \033[1;97m│ ││ ││  └─┐"""+Fore.RED+"""───\033[1;92m║║║\033[1;97m├─┤ | \033[1;96mSebelum Recode Toolsnya
  \033[1;96m╩ \033[1;97m└─┘└─┘┴─┘└─┘   \033[1;92m╚╩╝\033[1;97m┴ ┴ | Powered \033[1;96mExecuted Team""")
     print(abu + '-' * os.get_terminal_size().columns, end=''*2)
     print (Fore.RED+""" • \033[1;97mCreator"""+Fore.RED+""" : \033[1;92mAmmar-Executed""")
@@ -92,7 +92,6 @@ def banner():
 
 def banner2():
     print ("\033[1;97m 1"+Fore.RED+".\033[1;97mMulai \033[1;92mSpam"+ungu+" 24 Jam Non Stop")
-    print ("\033[1;97m 2"+Fore.RED+".\033[1;97mLaporkan \033[1;93mBug")
     print ("\033[1;97m 3"+Fore.RED+".Exit \033[1;97mTools")
     print(abu + '-' * os.get_terminal_size().columns, end=''*2)
 
@@ -101,9 +100,6 @@ def inputan():
     modepesawat=input("\033[1;97m[\033[1;93m•\033[1;97m] Pilih Menu Tools \033[1;96m»"+Fore.RED+"⟩\033[1;95m ")
     if modepesawat == "1":
         main()
-    #if modepesawat == "2":
-        #os.system("xdg-open https://instagram.com/ammarexecuted")
-        #tanya()
     if modepesawat == "2":
         time.sleep(3)
         print ("\033[1;97m["+Fore.RED+"!\033[1;97m] Berhasil Keluar Dari Tools")
